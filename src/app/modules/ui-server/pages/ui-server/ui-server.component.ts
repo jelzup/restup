@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Subscription, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
@@ -33,7 +34,13 @@ export class UiServerComponent implements OnInit {
   showDialog = false;
   subscription: Subscription = new Subscription();
 
-  constructor(private ordersPendingService: OrdersPendingService) { }
+  constructor(private ordersPendingService: OrdersPendingService, private meta: Meta) {
+    setTimeout(() => {
+      this.meta.updateTag(
+        { name: 'theme-color', content: '#4866d2' }
+      )
+    }, 100)
+  }
 
   ngOnInit(): void {
     this.getOrdersPending();
@@ -81,7 +88,7 @@ export class UiServerComponent implements OnInit {
       })
     ).subscribe(orders => {
       console.log('orders', orders)
-      this.orders = orders;
+      this.orders = orders.filter(order => order.status !== 'en cours' && order.status !== '');
     })
   }
 }

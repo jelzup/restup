@@ -1,26 +1,26 @@
-<div class="card mx-2">
-  <div class="card-header text-center pt-4 pb-3">
-    <span class="text-uppercase text-dark">{{order.detail}}</span>
-    <h3 class="font-weight-bold mt-2">
-      <small>{{order.type | titlecase}}</small>
-    </h3>
+<h4 class="text-uppercase position-absolute d-flex align-items-center justify-content-center">
+  <i class="fas fa-hourglass-start text-md mr-2 me-2" *ngIf="order.status === 'en cours'"></i>
+  <i class="fas fa-check text-md mr-2 me-2" *ngIf="order.status === 'ready'"></i>
+  <small>{{order.type | titlecase}}</small>
+</h4>
+<div class="card mx-2 mt-3 mb-3">
+  <div class="card-header text-center pt-4 pb-1 pb-3 mt-4">
+    <p class="text-uppercase font-weight-bold text-dark mb-0">{{order.detail}}</p>
+    <span class="text-sm">28/09/2022 14:45</span>
   </div>
-  <div class="card-body text-lg-start pt-0 px-3">
-    <h6 class="ms-2 text-uppercase text-xs font-weight-bolder opacity-6">PAGES</h6>
+  <div class="card-body text-lg-start pt-0 pb-0 px-3">
     <div class="d-flex align-items-center justify-content-lg-start p-2" *ngFor="let product of order.products">
       <div class="icon icon-shape icon-{{isMobile() || isTablet() ? 'xs' : 'sm' }} rounded-circle {{getCategoryProductClass(product.category)}} 
 					shadow text-center text-white font-weight-bold d-flex align-items-center justify-content-center">
         <span>{{product.quantity}}</span>
       </div>
       <div class="ps-2">
-        <span>{{product.name}}</span>
+        <span class="text-sm">{{product.name}}</span>
       </div>
     </div>
-  </div>
-  <div class="card-footer text-center">
-    <a href="javascript:;" class="btn btn-icon btn-dark d-lg-block mt-3 mb-0" (click)="orderReady()">
+    <a href="javascript:;" class="btn btn-icon bg-gradient-success d-lg-block mt-3" (click)="orderReady()">
       <i class="fas fa-check me-1" aria-hidden="true"></i>
-      Commande prête
+      Servir la commande
     </a>
   </div>
 </div>

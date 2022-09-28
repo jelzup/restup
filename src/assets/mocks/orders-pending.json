@@ -2,6 +2,7 @@
   "id": 1,
   "type": "en salle",
   "detail": "table 1",
+  "status": "ready",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -39,6 +40,7 @@
   "id": 2,
   "type": "en salle",
   "detail": "table 2",
+  "status": "en cours",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -76,6 +78,7 @@
   "id": 3,
   "type": "en salle",
   "detail": "table 3",
+  "status": "",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -113,6 +116,7 @@
   "id": 4,
   "type": "en livraison",
   "detail": "Georges Clooney",
+  "status": "en cours",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -150,6 +154,7 @@
   "id": 5,
   "type": "en salle",
   "detail": "table 5",
+  "status": "",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -187,6 +192,7 @@
   "id": 6,
   "type": "à emporter",
   "detail": "Alice Merveille",
+  "status": "en cours",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -224,6 +230,7 @@
   "id": 7,
   "type": "en salle",
   "detail": "table 7",
+  "status": "en cours",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -261,6 +268,7 @@
   "id": 8,
   "type": "a emporter",
   "detail": "Maxime Durand",
+  "status": "",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -298,6 +306,7 @@
   "id": 9,
   "type": "en salle",
   "detail": "table 9",
+  "status": "en cours",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -335,6 +344,7 @@
   "id": 10,
   "type": "en livraison",
   "detail": "Jacques Rousseau",
+  "status": "",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -372,6 +382,7 @@
   "id": 11,
   "type": "en salle",
   "detail": "table 3",
+  "status": "",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -409,6 +420,7 @@
   "id": 12,
   "type": "en salle",
   "detail": "table 12",
+  "status": "en cours",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",
@@ -446,6 +458,7 @@
   "id": 13,
   "type": "à Emporter",
   "detail": "Jean Dupont",
+  "status": "",
   "products": [{
     "category": "entrees",
     "name": "Salade Arawukas",

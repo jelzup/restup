@@ -10,11 +10,11 @@ background-size: cover;">
   </a>
   <a [routerLink]="['/home']" routerLinkActive="router-link-active"
     class="btn btn-icon bg-gradient-primary btn-round position-absolute d-flex align-items-center justify-content-center"
-    style="right: 20px; top: 20px; z-index: 4; width: 55px; height: 55px;">
+    style="right: 20px; top: 20px; z-index: 4; width: 45px; height: 45px;">
     <i class="fa-solid fa-house" style="font-size: 20px;"></i>
   </a>
-  <div class="container-fluid pb-lg-9 pb-9 pt-6 postion-relative z-index-2">
-    <app-head-title [title]="title"></app-head-title>
+  <div class="container-fluid pb-lg-9 pb-9 pt-3 postion-relative z-index-2">
+    <app-head-title [quantity]="quantity" [kitchen]="kitchen" [subtitle]="subtitle"></app-head-title>
     <app-category-tabs></app-category-tabs>
   </div>
 </div>

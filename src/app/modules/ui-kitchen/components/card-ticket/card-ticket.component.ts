@@ -53,8 +53,8 @@ export class CardTicketComponent implements OnInit {
 
     swalWithBootstrapButtons
       .fire({
-        title: "Envoyer la commande",
-        text: "Confirmez-vous l'envoi de la commande ?",
+        title: "Commande prête",
+        text: "Confirmez-vous que la commande est prête ?",
         icon: "warning",
         showCancelButton: true,
         confirmButtonText: "Confirmer",
@@ -65,7 +65,7 @@ export class CardTicketComponent implements OnInit {
         if (result.value) {
           swalWithBootstrapButtons.fire(
             "Commande envoyée !",
-            "La commande est prête à être servie.",
+            "La commande est traitée par la cuisine et sera prise en charge par le serveur.",
             "success"
           );
         } else if (
@@ -75,6 +75,45 @@ export class CardTicketComponent implements OnInit {
           swalWithBootstrapButtons.fire(
             "Envoi annulé",
             "La commande reste toujours en attente.",
+            "error"
+          );
+        }
+      });
+  }
+
+  orderInProgress() {
+    const swalWithBootstrapButtons = Swal.mixin({
+      customClass: {
+        confirmButton: "btn btn-success",
+        cancelButton: "btn btn-danger"
+      },
+      buttonsStyling: false
+    });
+
+    swalWithBootstrapButtons
+      .fire({
+        title: "Prise en charge de la commande",
+        text: "Confirmez-vous la prise en charge de la commande ?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Confirmer",
+        cancelButtonText: "Annuler",
+        reverseButtons: false
+      })
+      .then(result => {
+        if (result.value) {
+          swalWithBootstrapButtons.fire(
+            "Commande prise en charge !",
+            "La commande a été prise charge par la cuisine.",
+            "success"
+          );
+        } else if (
+          /* Read more about handling dismissals below */
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            "Prise en charge annulé",
+            "La commande reste en attente de prise en charge par la cuisine.",
             "error"
           );
         }

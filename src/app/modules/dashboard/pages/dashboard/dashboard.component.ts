@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +10,13 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 export class DashboardComponent implements OnInit {
   showSidebar = false;
   constructor(@Inject(DOCUMENT) private document: Document,
-    private renderer: Renderer2) { }
+    private renderer: Renderer2, private meta: Meta) {
+    setTimeout(() => {
+      this.meta.updateTag(
+        { name: 'theme-color', content: '#4866d2' }
+      )
+    }, 100)
+  }
 
   ngOnInit(): void {
   }

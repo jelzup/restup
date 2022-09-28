@@ -3,6 +3,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { OrdersPendingService } from 'src/app/services/orders-pending/orders-pending.service';
 import { Subscription, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-ui-server-delivery',
@@ -23,7 +24,13 @@ export class UiServerDeliveryComponent implements OnInit {
   innerWidth: number = 0;
   subscription: Subscription = new Subscription();
 
-  constructor(private ordersPendingService: OrdersPendingService) { }
+  constructor(private ordersPendingService: OrdersPendingService, private meta: Meta) {
+    setTimeout(() => {
+      this.meta.updateTag(
+        { name: 'theme-color', content: '#4866d2' }
+      )
+    }, 100)
+  }
 
   ngOnInit(): void {
     this.getOrdersPending();
@@ -71,7 +78,7 @@ export class UiServerDeliveryComponent implements OnInit {
       })
     ).subscribe(orders => {
       console.log('orders', orders)
-      this.orders = orders.filter(order => order.type === 'en livraison');
+      this.orders = orders.filter(order => order.type === 'en livraison' && order.status !== 'en cours' && order.status !== '');
     })
   }
 }
