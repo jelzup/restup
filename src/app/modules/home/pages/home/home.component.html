@@ -1,0 +1,87 @@
+  <div class="page-header position-relative" style="background-image: url('assets/img/pricing.jpeg');
+	background-size: cover;">
+    <span class="mask bg-gradient-primary opacity-6"></span>
+    <div class="container pb-lg-9 pb-10 pt-7 postion-relative" style="z-index: 0;">
+      <div class="row mt-4">
+        <div class="col-md-6 mx-auto text-center">
+          <h3 class="text-white">Bonjour Maxime !</h3>
+          <p class="text-white">Voici tous les outils dont vous avez besoin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-n8 mt-5">
+    <div class="container">
+      <div class="row d-flex justify-content-center mb-3">
+        <div class="col-lg-4 col-md-5 col-sm-4 mb-lg-0 mb-4">
+          <a [routerLink]="['/dashboard']" routerLinkActive="router-link-active">
+            <div class="card py-3">
+              <div class="card-header d-flex flex-column text-center pt-4 pb-2">
+                <img src="assets/img/monitor.png" width="65" class="mx-auto mb-2">
+                <span class="title-card text-uppercase text-dark">Dashboard</span>
+              </div>
+              <div class="card-body text-lg-start text-center pt-0">
+                <p class="text-center text-sm text-secondary mb-0">Suivi d'activité</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-5 mb-lg-0 mb-4">
+          <a [routerLink]="['/']" routerLinkActive="router-link-active">
+            <div class="card py-3">
+              <div class="card-header d-flex flex-column text-center pt-4 pb-2">
+                <img src="assets/img/search.png" width="65" class="mx-auto mb-2">
+                <span class="title-card text-uppercase text-dark">Contrôle HACCP</span>
+              </div>
+              <div class="card-body text-lg-start text-center pt-0">
+                <p class="text-center text-sm text-secondary mb-0">Autocontrôle Sanitaire</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 col-md-5 col-sm-5 mb-lg-0 mb-4">
+          <a [routerLink]="['/']" routerLinkActive="router-link-active">
+            <div class="card py-3">
+              <div class="card-header d-flex flex-column text-center pt-4 pb-2">
+                <img src="assets/img/plate.png" width="75" class="mx-auto mb-2">
+                <span class="title-card text-uppercase text-dark">Commande en ligne</span>
+              </div>
+              <div class="card-body text-lg-start text-center pt-0">
+                <p class="text-center text-sm text-secondary mb-0">Interface client</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-5 mb-lg-0 mb-4">
+          <a [routerLink]="['/ui-server']" routerLinkActive="router-link-active">
+            <div class="card py-3">
+              <div class="card-header d-flex flex-column text-center pt-4 pb-2">
+                <img src="assets/img/cloche.png" width="75" class="mx-auto mb-2">
+                <span class="title-card text-uppercase text-dark">Suivi Serveur</span>
+              </div>
+              <div class="card-body text-lg-start text-center pt-0">
+                <p class="text-center text-sm text-secondary mb-0">Interface serveur</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-5 mb-lg-0 mb-4">
+          <a [routerLink]="['/ui-kitchen']" routerLinkActive="router-link-active">
+            <div class="card py-3">
+              <div class="card-header d-flex flex-column text-center pt-4 pb-2">
+                <!-- <i class="far fa-hat-chef fa-3x mb-3 bg-gradient-success"></i> -->
+                <img src="assets/img/chef-hat.png" width="75" class="mx-auto mb-2">
+                <span class="title-card text-uppercase text-dark">Suivi Cuisine</span>
+              </div>
+              <div class="card-body text-lg-start text-center pt-0">
+                <p class="text-center text-sm text-secondary mb-0">Interface cuisine</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>

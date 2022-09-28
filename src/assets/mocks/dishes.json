@@ -1,0 +1,149 @@
+[{
+    "id": 1,
+    "img": "assets/img/plats/plat1.jpeg",
+    "category": "smoked meats",
+    "name": "Ribs de bœuf plat de côte",
+    "price": 45.00,
+    "description": "500g"
+  },
+  {
+    "id": 2,
+    "img": "assets/img/plats/plat2.jpeg",
+    "category": "smoked meats",
+    "name": "Brisket poitrine de Bœuf 250g",
+    "price": 28.00,
+    "description": "Délicieuse poitrine bœuf fumé avec une saumure au poivre noir et de nombreux ingrédients secrets de la Maison Arawukas"
+  },
+  {
+    "id": 3,
+    "img": "assets/img/plats/plat3.jpeg",
+    "category": "smoked meats",
+    "name": "Souris d’agneau fumée",
+    "price": 28.00,
+    "description": ""
+  }, {
+    "id": 4,
+    "img": "assets/img/plats/plat1.jpeg",
+    "category": "smoked chickens",
+    "name": "Half chicken smocked",
+    "price": 20.00,
+    "description": "500g"
+  },
+  {
+    "id": 5,
+    "img": "assets/img/plats/plat2.jpeg",
+    "category": "smoked chickens",
+    "name": "Hot smoked Wings x8 ou Pilon x3",
+    "price": 12.00,
+    "description": "Avec sauce signature"
+  }, {
+    "id": 6,
+    "img": "assets/img/plats/plat1.jpeg",
+    "category": "burgers",
+    "name": "Angus burger 150g",
+    "price": 21.00,
+    "description": "Steak angus, sauce signature, mayonnaise japonaise, sauce huître, raifort"
+  },
+  {
+    "id": 7,
+    "img": "assets/img/plats/plat2.jpeg",
+    "category": "burgers",
+    "name": "Taino’s Brisket burger 150g",
+    "price": 21.00,
+    "description": "Brisket, steak, sauce savora Arawukas, cheddar, salade, tomates"
+  },
+  {
+    "id": 8,
+    "img": "assets/img/plats/plat2.jpeg",
+    "category": "burgers",
+    "name": "Oklahoma 150g",
+    "price": 23.00,
+    "description": "Pain noir, steak haché fumée angus, cheddar, salade,tomates, guacamol, salade de choux rouge, jalapenos, sauce Arawukas"
+  },
+  {
+    "id": 9,
+    "img": "assets/img/plats/plat2.jpeg",
+    "category": "burgers",
+    "name": "Lobster Roll",
+    "price": 25.00,
+    "description": "Homard, crème de langoustines à l’aneth, beurre persillé, laitue, oignons, avocats"
+  },{
+	"id": 1,
+	"img": "assets/img/plats/plat1.jpeg",
+	"category": "grilled",
+	"name": "Filet de boeuf au grill ",
+	"price": 32.00,
+	"description": "250g frites maison"
+ },
+ {
+	"id": 2,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "grilleds",
+	"name": "Faux Filet",
+	"price": 24.00,
+	"description": "190g frites maison"
+ },
+ {
+	"id": 3,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "grilleds",
+	"name": "Côte de boeuf",
+	"price": 39.00,
+	"description": "600g Un accompagnements au choix"
+ },
+ {
+	"id": 4,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "grilleds",
+	"name": "Côte de boeuf à partager",
+	"price": 78.00,
+	"description": "1,3kg Deux accompagnements au choix"
+ },
+ {
+	"id": 4,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "grilleds",
+	"name": "Tomahawk fumé & grillé",
+	"price": 95.00,
+	"description": "Environ 1,3kg À partager deux accompagnements au choix"
+ },{
+	"id": 1,
+	"img": "assets/img/plats/plat1.jpeg",
+	"category": "sides",
+	"name": "Patate douce rôtie",
+	"price": 5.00,
+	"description": "250g frites maison"
+ },
+ {
+	"id": 2,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "sides",
+	"name": "Mac’n Cheese",
+	"price": 4.50,
+	"description": "Ribs effilochés +2€"
+ },
+ {
+	"id": 3,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "sides",
+	"name": "Frites maison",
+	"price": 4.00,
+	"description": "Supplément cheddar +2€"
+ },
+ {
+	"id": 4,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "sides",
+	"name": "Maïs rôti",
+	"price": 4.50,
+	"description": "1,3kg Deux accompagnements au choix"
+ },
+ {
+	"id": 4,
+	"img": "assets/img/plats/plat2.jpeg",
+	"category": "sides",
+	"name": "Haricots verts",
+	"price": 4.00,
+	"description": "Environ 1,3kg À partager deux accompagnements au choix"
+ }
+]

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  restInApi: 'http://dpwstudio.local:3000'
 };

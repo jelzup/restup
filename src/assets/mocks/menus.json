@@ -1,0 +1,22 @@
+[{
+    "id": 1,
+    "img": "assets/img/menu.png",
+    "name": "Menu Midi 1",
+    "price": 14.00,
+    "description": "Burgers + Frites Maison + Boisson"
+  },
+  {
+    "id": 2,
+    "img": "assets/img/menu.png",
+    "name": "Menu Midi 2",
+    "price": 18.00,
+    "description": "Demi Poulet fumé + Frites Maison + Boisson"
+  },
+  {
+    "id": 3,
+    "img": "assets/img/menu.png",
+    "name": "Menu Midi 3",
+    "price": 18.00,
+    "description": "Plat + Boisson"
+  }
+]

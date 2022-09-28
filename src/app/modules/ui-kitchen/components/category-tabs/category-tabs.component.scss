@@ -1,0 +1,11 @@
+@media screen and (max-width: 500px) {
+  .nav-item {
+    .nav-link {
+      padding: 10px !important;
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

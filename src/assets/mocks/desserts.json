@@ -1,0 +1,37 @@
+[
+	{
+	  "id": 1,
+	  "img": "assets/img/desserts/dessert.jpeg",
+	  "name": "Extra brownie",
+	  "price": 8.00,
+	  "description": "Brownie deux chocolats et sa crème anglaise fumée"
+	},
+	{
+	  "id": 2,
+	  "img": "assets/img/desserts/dessert.jpeg",
+	  "name": "Giant cookie skillet butter",
+	  "price": 9.00,
+	  "description": "Cookie au chocolat cuit dans un poêlon, boule de glace, caramel beurre salé et amandes efilées"
+	},
+	{
+	  "id": 3,
+	  "img": "assets/img/desserts/dessert.jpeg",
+	  "name": "Brioche perdue du trappeur",
+	  "price": 9.00,
+	  "description": "Brioche perdue, glace vanille fumée, sirop d’érable et noix de pécan torréfiés"
+	},
+	{
+	  "id": 4,
+	  "img": "assets/img/desserts/dessert.jpeg",
+	  "name": "Carrot Cake",
+	  "price": 8.00,
+	  "description": "Gateau fondant à la carotte et glaçage délicieux à l’americaine"
+	},
+	{
+	  "id": 5,
+	  "img": "assets/img/desserts/dessert.jpeg",
+	  "name": "Panna Cotta",
+	  "price": 8.00,
+	  "description": "Mangue coco"
+	}
+ ]

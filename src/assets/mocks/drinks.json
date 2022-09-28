@@ -1,0 +1,150 @@
+[{
+    "id": 1,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Coca Cola 33cl",
+    "price": 4.50,
+    "description": "Bouteille de 33cl en verre"
+  },
+  {
+    "id": 2,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Coca Cola Zéro 33cl",
+    "price": 4.50,
+    "description": "Bouteille de 33cl en verre"
+  },
+  {
+    "id": 3,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Schweppes 25cl",
+    "price": 4.50,
+    "description": "Bouteille de 25cl en verre"
+  },
+  {
+    "id": 4,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Oasis 33cl",
+    "price": 4.50,
+    "description": "Bouteille de 33cl en verre"
+  },
+  {
+    "id": 5,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Sprite 33cl",
+    "price": 4.50,
+    "description": "Bouteille de 33cl en verre"
+  },
+  {
+    "id": 6,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Ice Tea 25cl",
+    "price": 4.50,
+    "description": "Cannette de 25cl"
+  },
+  {
+    "id": 7,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Dr Pepper 33cl",
+    "price": 4.50,
+    "description": "Bouteille de 33cl en verre"
+  },
+  {
+    "id": 8,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "Evian 50cl",
+    "price": 4.00,
+    "description": "Bouteille de 50cl en verre"
+  },
+  {
+    "id": 9,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "San Pellegrino 50cl",
+    "price": 4.50,
+    "description": "Bouteille de 50cl en verre"
+  }, {
+    "id": 10,
+    "img": "assets/img/drinks/drinks.png",
+    "category": "drinks",
+    "name": "San Pellegrino 1l",
+    "price": 6.00,
+    "description": "Bouteille de 1l en verre"
+  }, {
+    "id": 11,
+    "img": "assets/img/drinks/cocktail.png",
+    "category": "mocktails",
+    "name": "Mojito",
+    "price": 8.00,
+    "description": "Menthe fraiche, citron vert, sucre de canne, eau gazeuse"
+  },
+  {
+    "id": 12,
+    "img": "assets/img/drinks/cocktail.png",
+    "category": "mocktails",
+    "name": "Pina Colada",
+    "price": 8.00,
+    "description": "Jus d’orange, jus d’ananas, lait de coco"
+  },
+  {
+    "id": 13,
+    "img": "assets/img/drinks/cocktail.png",
+    "category": "mocktails",
+    "name": "The Famous on the Beach",
+    "price": 8.00,
+    "description": "Jus de citron vert, purée de pêche jus de Cranberry"
+  },
+  {
+    "id": 14,
+    "img": "assets/img/drinks/cocktail.png",
+    "category": "mocktails",
+    "name": "L\"Amérindien",
+    "price": 8.00,
+    "description": "Citron vert, purée de framboise, sirop d’orgeat, menthe fraiche, jus de Cranberry"
+  },
+  {
+    "id": 15,
+    "img": "assets/img/drinks/cocktail.png",
+    "category": "mocktails",
+    "name": "L\"Arkensas",
+    "price": 8.00,
+    "description": "Purée de mangue, jus de la passion, cannelle, jus de pomme"
+  },
+  {
+    "id": 16,
+    "img": "assets/img/drinks/cocktail.png",
+    "category": "mocktails",
+    "name": "L\"Arawukas",
+    "price": 8.00,
+    "description": "Purée de pêche, sirop d’orgeat, jus d’orange, jus de cranberry"
+  }, {
+    "id": 17,
+    "img": "assets/img/drinks/hotdrinks.png",
+    "category": "hot drinks",
+    "name": "Café (Nespresso)",
+    "price": 2.50,
+    "description": "Café servi avec une machine Nespresso"
+  },
+  {
+    "id": 18,
+    "img": "assets/img/drinks/hotdrinks.png",
+    "category": "hot drinks",
+    "name": "Déca (Nespresso)",
+    "price": 2.50,
+    "description": "Déca servi avec une machine Nespresso"
+  },
+  {
+    "id": 19,
+    "img": "assets/img/drinks/hotdrinks.png",
+    "category": "hot drinks",
+    "name": "Thés infusions",
+    "price": 3.00,
+    "description": "Plusieurs choix de thés disponibles"
+  }
+]

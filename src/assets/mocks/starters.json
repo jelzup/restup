@@ -1,0 +1,33 @@
+[{
+    "id": 1,
+    "img": "assets/img/plats/plat4.jpeg",
+    "name": "Salade Arawukas",
+    "category": "Starters premium",
+    "price": 14.00,
+    "description": "Gambas fumées ou poulet fumé Arawukas, pommes de terre roseval, tomates, oignons rouge,oignon cebette, piments végétariens, maïs, avocats, coriandre hachée, sauce signature"
+  },
+  {
+    "id": 2,
+    "img": "assets/img/plats/plat4.jpeg",
+    "name": "Nachito’s",
+    "category": "Starters premium",
+    "price": 13.00,
+    "description": "Nachos, fromage cheddar, guacamole, viande effilochée, jalapenos"
+  },
+  {
+    "id": 3,
+    "img": "assets/img/plats/plat4.jpeg",
+    "name": "Foie gras Arawukas fumé à froid",
+    "category": "Starters premium",
+    "price": 19.00,
+    "description": "80g Foie gras maison, pain d’épices et ses pommes fondantes aux 4 épices"
+  },
+  {
+    "id": 4,
+    "img": "assets/img/plats/plat4.jpeg",
+    "name": "Carpaccio de bœuf Burrata",
+    "category": "Starters premium",
+    "price": 20.00,
+    "description": "Carpaccio maison, copeaux de parmesan, pesto verde, burrata, roquette, vinaigrette au citron noir d’Iran"
+  }
+]
