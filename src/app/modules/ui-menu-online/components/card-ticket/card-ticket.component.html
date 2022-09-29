@@ -1,0 +1,19 @@
+<div class="card me-3 mb-3">
+  <img class="card-img-top" [src]="product.img">
+  <div class="card-body">
+    <div class=" d-flex align-items-center justify-content-between">
+      <h5 class="m-0">{{product.name}}</h5>
+      <i class="fas fa-heart text-danger fa-xl"></i>
+    </div>
+    <p class="m-0">
+      {{product.price | currency:'EUR':'symbol':'1.2-2':'fr' }}
+    </p>
+  </div>
+  <div class="card-footer d-flex align-items-center justify-content-between pt-0 pb-3">
+    <app-quantity (changeQuantityEvent)="getQuantity($event)"></app-quantity>
+    <button class="btn btn-icon btn-2 bg-gradient-info px-0 mb-0" style="width: 45px; height: 45px; border-radius: 50%;"
+      (click)="addProductToCart(product)">
+      <i class="fas fa-cart-plus fa-lg"></i>
+    </button>
+  </div>
+</div>

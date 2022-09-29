@@ -1,0 +1,44 @@
+.quantity-control {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: fit-content;
+	margin: 0;
+ 
+ 
+	.quantity-btn {
+	  border: none;
+	  border-radius: 50%;
+	  color: #fff;
+	  outline: none;
+	  margin: 0;
+	  cursor: pointer;
+	  display: flex;
+	  padding: 0;
+	  align-items: center;
+ 
+	  .fa-solid {
+		 padding: 7px 8px;
+		 border-radius: 50%;
+	  }
+	}
+ 
+	.quantity-input {
+	  outline: none;
+	  user-select: none;
+	  text-align: center;
+	  width: 40px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  background: transparent;
+	  border: none;
+	}
+ 
+	.quantity-input::-webkit-inner-spin-button,
+	.quantity-input::-webkit-outer-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+ }
+ 

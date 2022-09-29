@@ -1,0 +1,59 @@
+<app-header [title]="'Plats'" [icon]="'fas fa-drumstick-bite'"></app-header>
+<div class="mt-n8 pt-3 mb-5">
+  <div class="container-fluid px-0">
+    <h2 class="position-relative z-index-2 text-white text-uppercase ms-4 mb-0 ps-3">
+      Smoked Meats
+    </h2>
+    <hr style="margin: 5px 0 10px; background: white;">
+    <p class="d-block text-sm ms-4 ps-3 text-white font-weight-bold position-relative z-index-2 text-uppercase"
+      style="letter-spacing: 3px;">
+      Viandes fumées</p>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of smokedMeats">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid px-0 mt-4">
+    <app-title-menu [title]="'Smoked Chickens'" [subtitle]="'Poulets fumées'"></app-title-menu>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of smokedChickens">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid px-0 mt-4">
+    <app-title-menu [title]="'Burgers'" [subtitle]="'Pains briochés frais'"></app-title-menu>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of burgers">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid px-0 mt-4">
+    <app-title-menu [title]="'Grilled'" [subtitle]="'Viandes grillées'"></app-title-menu>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of grilleds">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid px-0 mt-4">
+    <app-title-menu [title]="'Sides'" [subtitle]="'Accompagnements'"></app-title-menu>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of sides">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>

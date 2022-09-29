@@ -1,0 +1,39 @@
+<app-header [title]="'Boissons'" [icon]="'fas fa-wine-glass'"></app-header>
+<div class="mt-n8 pt-3 mb-5">
+  <div class="container-fluid px-0">
+    <h2 class="position-relative z-index-2 text-white text-uppercase ms-4 mb-0 ps-3">
+      Drinks
+    </h2>
+    <hr style="margin: 5px 0 10px; background: white;">
+    <p class="d-block text-sm ms-4 ps-3 text-white font-weight-bold position-relative z-index-2 text-uppercase"
+      style="letter-spacing: 3px;">
+      Boissons</p>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of drinks">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid px-0 mt-4">
+    <app-title-menu [title]="'Mocktails'" [subtitle]="'Cocktail sans alcool'"></app-title-menu>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of mocktails">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+  <div class="container-fluid px-0 mt-4">
+    <app-title-menu [title]="'Hot Drinks'" [subtitle]="'Boissons chaudes'"></app-title-menu>
+    <owl-carousel-o [options]="carouselMultipleOptions">
+      <ng-container *ngFor="let product of hotDrinks">
+        <ng-template carouselSlide>
+          <app-card-ticket [product]="product"></app-card-ticket>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>

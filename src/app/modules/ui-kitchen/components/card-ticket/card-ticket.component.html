@@ -18,16 +18,18 @@
         <span class="text-sm">{{product.name}}</span>
       </div>
     </div>
-    <a href="javascript:;"
-      class="btn btn-icon bg-gradient-{{order.status === '' ? 'info' : 'secondary'}} d-lg-block mt-3"
-      *ngIf="order.status !== 'en cours'" (click)="orderInProgress()">
-      <i class="fas fa-check me-1" aria-hidden="true"></i>
-      Prise en charge
-    </a>
-    <a href="javascript:;" class="btn btn-icon bg-gradient-success d-lg-block mt-3" *ngIf="order.status === 'en cours'"
-      (click)="orderReady()">
-      <i class="fas fa-check me-1" aria-hidden="true"></i>
-      Commande prête
-    </a>
+    <div class="text-center">
+      <a href="javascript:;"
+        class="btn btn-icon bg-gradient-{{order.status === '' ? 'info' : 'secondary'}} d-lg-block mt-3"
+        *ngIf="order.status !== 'en cours'" (click)="orderInProgress()">
+        <i class="fas fa-check me-1" aria-hidden="true"></i>
+        Prise en charge
+      </a>
+      <a href="javascript:;" class="btn btn-icon bg-gradient-success d-lg-block mt-3"
+        *ngIf="order.status === 'en cours'" (click)="orderReady()">
+        <i class="fas fa-check me-1" aria-hidden="true"></i>
+        Commande prête
+      </a>
+    </div>
   </div>
 </div>
