@@ -81,4 +81,8 @@ export class UiServerDeliveryComponent implements OnInit {
       this.orders = orders.filter(order => order.type === 'en livraison' && order.status !== 'en cours' && order.status !== '');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

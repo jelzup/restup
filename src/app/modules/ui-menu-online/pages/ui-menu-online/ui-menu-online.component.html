@@ -1,3 +1,4 @@
+<app-loader [state]="isLoading()"></app-loader>
 <app-header [title]="'Starters'" [icon]="'fas fa-seedling'"></app-header>
 <div class="mt-n8 pt-3 mb-5">
   <div class="container-fluid px-0">
@@ -5,7 +6,7 @@
       <h2 class="position-relative z-index-2 text-white text-uppercase ms-4 mb-0 ps-3">
         Starters
       </h2>
-      <hr style="margin: 5px 0 10px; background: white;">
+      <hr style="margin: 5px 0 10px 40px; background: white;">
       <p class="d-block text-sm ms-4 ps-3 text-white font-weight-bold position-relative z-index-2 text-uppercase"
         style="letter-spacing: 3px;">
         Entrées</p>
@@ -18,3 +19,5 @@
       </owl-carousel-o>
     </div>
   </div>
+</div>
+<app-sidebar-cart></app-sidebar-cart>

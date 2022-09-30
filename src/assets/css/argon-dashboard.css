@@ -33407,13 +33407,13 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .leaflet-control-layers-toggle {
-  background-image: url(images/layers.png);
+  /* background-image: url(images/layers.png); */
   width: 36px;
   height: 36px
 }
 
 .leaflet-retina .leaflet-control-layers-toggle {
-  background-image: url(images/layers-2x.png);
+  /* background-image: url(images/layers-2x.png); */
   background-size: 26px 26px
 }
 
@@ -33461,7 +33461,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .leaflet-default-icon-path {
-  background-image: url(images/marker-icon.png)
+  /* background-image: url(images/marker-icon.png) */
 }
 
 .leaflet-container .leaflet-control-attribution {

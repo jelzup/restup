@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
+import { Component, Inject, Input, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +7,9 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @Input() title: string = '';
+  @Input() icon: string = '';
+
   showSidebar = false;
   constructor(@Inject(DOCUMENT) private document: Document,
     private renderer: Renderer2) { }

@@ -98,4 +98,8 @@ export class UiMenuOnlineDishesComponent implements OnInit {
       this.sides = products.filter(product => product.category === 'sides');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

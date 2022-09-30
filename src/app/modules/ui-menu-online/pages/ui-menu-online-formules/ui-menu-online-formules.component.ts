@@ -91,4 +91,8 @@ export class UiMenuOnlineFormulesComponent implements OnInit {
       this.menus = products;
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

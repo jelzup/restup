@@ -81,4 +81,8 @@ export class UiKitchenRoomComponent implements OnInit {
       this.orders = orders.filter(order => order.type === 'en salle' && order.status !== 'ready');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

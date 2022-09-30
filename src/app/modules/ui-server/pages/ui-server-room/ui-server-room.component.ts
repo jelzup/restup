@@ -81,4 +81,8 @@ export class UiServerRoomComponent implements OnInit {
       this.orders = orders.filter(order => order.type === 'en salle' && order.status !== 'en cours' && order.status !== '');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

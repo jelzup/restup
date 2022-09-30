@@ -3,9 +3,9 @@
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
       aria-hidden="true" id="iconSidenav"></i>
-    <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html "
+    <a class="navbar-brand m-0" [routerLink]="['/']" routerLinkActive="router-link-active" 
       target="_blank">
-      <span class="ms-1 font-weight-bold" style="font-size: 20px;">REST'UP</span>
+      <h4 class="ms-1" style="font-size: 20px;">REST'UP</h4>
     </a>
   </div>
   <hr class="horizontal dark mt-0">
@@ -15,7 +15,7 @@
         <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">
           <div
             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="ni ni-app text-dark text-sm opacity-10"></i>
+            <i class="fas fa-th-large text-primary text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Home</span>
         </a>
@@ -24,27 +24,9 @@
         <a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">
           <div
             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="ni ni-tv-2 text-dark text-sm opacity-10"></i>
+            <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Dashboard</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " [routerLink]="['/ui-kitchen']" routerLinkActive="active">
-          <div
-            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
-          </div>
-          <span class="nav-link-text ms-1">Suivi Cuisine</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " [routerLink]="['/ui-server']" routerLinkActive="router-link-active">
-          <div
-            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="fas fa-concierge-bell text-info text-sm opacity-10"></i>
-          </div>
-          <span class="nav-link-text ms-1">Suivi Serveur</span>
         </a>
       </li>
       <li class="nav-item">
@@ -53,7 +35,34 @@
             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-collection text-primary text-sm opacity-10"></i>
           </div>
-          <span class="nav-link-text ms-1">Commande en ligne</span>
+          <span class="nav-link-text ms-1">Menu en ligne</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="['/ui-server']" routerLinkActive="router-link-active">
+          <div
+            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fas fa-concierge-bell text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Suivi Serveur</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="['/ui-kitchen']" routerLinkActive="active">
+          <div
+            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fas fa-utensils text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Suivi Cuisine</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " [routerLink]="['/ui-planning']" routerLinkActive="active">
+          <div
+            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="fas fa-calendar-alt text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Planning</span>
         </a>
       </li>
       <li class="nav-item mt-3">
@@ -72,7 +81,7 @@
         <a class="nav-link " href="../pages/sign-up.html">
           <div
             class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="ni ni-button-power text-dark text-sm opacity-10"></i>
+            <i class="ni ni-button-power text-danger text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Déconnexion</span>
         </a>

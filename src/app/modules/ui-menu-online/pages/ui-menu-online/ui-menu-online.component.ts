@@ -90,4 +90,8 @@ export class UiMenuOnlineComponent implements OnInit {
       this.products = products;
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

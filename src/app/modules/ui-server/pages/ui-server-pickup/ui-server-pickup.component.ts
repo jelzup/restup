@@ -81,4 +81,8 @@ export class UiServerPickupComponent implements OnInit {
       this.orders = orders.filter(order => order.type === 'à emporter' && order.status !== 'en cours' && order.status !== '');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

@@ -16,6 +16,7 @@ import { UiServerModule } from './modules/ui-server/ui-server.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { UiMenuOnlineModule } from './modules/ui-menu-online/ui-menu-online.module';
+import { UiPlanningModule } from './modules/ui-planning/ui-planning.module';
 
 registerLocaleData(localeFr, 'fr');
 
@@ -33,6 +34,7 @@ registerLocaleData(localeFr, 'fr');
     UiKitchenModule,
     UiServerModule,
     UiMenuOnlineModule,
+    UiPlanningModule,
     HomeModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {

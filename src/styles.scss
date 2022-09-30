@@ -491,8 +491,65 @@ html {
   border-radius: 30px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #4766d1;
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #22a2ef;
   width: 35px;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #22a2ef;
+}
+
+// FULL CALENDAR
+.fc-scrollgrid,
+.fc-theme-standard .fc-scrollgrid {
+  border: none !important;
+}
+
+.fc-daygrid-block-event .fc-event-time,
+.fc-daygrid-block-event .fc-event-title,
+.fc-event-title-container {
+  font-weight: 600 !important;
+  padding: 0 15px !important;
+  border: none !important;
+}
+
+.fc-event-title-container {
+  background: linear-gradient(310deg, #1171ef, #11cdef) !important;
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start,
+.fc-direction-ltr .fc-daygrid-event.fc-event-start,
+.fc-direction-rtl .fc-daygrid-event.fc-event-end {
+  border: none !important;
+  background-color: transparent;
+}
+
+.fc-toolbar-title {
+  text-transform: uppercase !important;
+  font-size: 25px !important;
+}
+
+.fc .fc-button {
+  border-radius: 10px !important;
+  padding: 5px 15px !important;
+  border: none !important;
+  font-size: 14px !important;
+}
+
+.fc-button-group {
+  .fc-prev-button {
+    border-radius: 10px 0 0 10px !important;
+  }
+
+  .fc-next-button {
+    border-radius: 0 10px 10px 0 !important;
+  }
+}
+
+.fc-addEvent-button {
+  background: linear-gradient(310deg, #1171ef, #11cdef) !important;
 }

@@ -81,4 +81,8 @@ export class UiKitchenPickupComponent implements OnInit {
       this.orders = orders.filter(order => order.type === 'a emporter' && order.status !== 'ready');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

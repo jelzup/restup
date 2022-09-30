@@ -90,4 +90,8 @@ export class UiMenuOnlineDessertsComponent implements OnInit {
       this.desserts = products;
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

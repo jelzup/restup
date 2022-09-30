@@ -95,4 +95,8 @@ export class UiMenuOnlineDrinksComponent implements OnInit {
       this.hotDrinks = products.filter(product => product.category === 'hot drinks');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }

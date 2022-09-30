@@ -81,4 +81,8 @@ export class UiKitchenDeliveryComponent implements OnInit {
       this.orders = orders.filter(order => order.type === 'en livraison' && order.status !== 'ready');
     })
   }
+
+  isLoading() {
+    return this.subscription && !this.subscription.closed;
+  }
 }
