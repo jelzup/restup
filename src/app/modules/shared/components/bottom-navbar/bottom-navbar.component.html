@@ -1,0 +1,32 @@
+<div class="appBottomMenu" *ngIf="showBottomNavbar">
+  <a [routerLink]="['/ui-menu-online']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="fas fa-seedling"></i>
+      <strong>Entrées</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-menu-online-dishes']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="fas fa-drumstick-bite"></i>
+      <strong>Plats</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-menu-online-desserts']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="fas fa-cheese"></i>
+      <strong>Desserts</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-menu-online-drinks']" routerLinkActive="active"  class="item">
+    <div class="col">
+      <i class="fas fa-wine-glass"></i>
+      <strong>Boissons</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-menu-online-formules']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="fas fa-layer-group"></i>
+      <strong>Menus</strong>
+    </div>
+  </a>
+</div>

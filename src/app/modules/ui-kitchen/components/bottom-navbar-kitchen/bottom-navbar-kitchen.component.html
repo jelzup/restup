@@ -1,0 +1,32 @@
+<div class="appBottomMenu" *ngIf="showBottomNavbar">
+  <a [routerLink]="['/home']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="fas fa-home"></i>
+      <strong>Home</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-kitchen']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="fas fa-border-all"></i>
+      <strong>Tout</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-kitchen-room']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i _ngcontent-umx-c69="" class="ni ni-shop text-md"></i>
+      <strong>Salle</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-kitchen-delivery']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="ni ni-delivery-fast"></i>
+      <strong>Livraison</strong>
+    </div>
+  </a>
+  <a [routerLink]="['/ui-kitchen-pickup']" routerLinkActive="active" class="item">
+    <div class="col">
+      <i class="ni ni-bag-17"></i>
+      <strong>Emporter</strong>
+    </div>
+  </a>
+</div>

@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   constructor(private meta: Meta) {
     setTimeout(() => {
       this.meta.updateTag(
-        { name: 'theme-color', content: '#4866d2' }
+        { name: 'theme-color', content: '#1f91d7' }
       )
     }, 100)
   }

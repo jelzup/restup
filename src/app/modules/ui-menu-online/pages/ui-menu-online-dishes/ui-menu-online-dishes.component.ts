@@ -41,7 +41,7 @@ export class UiMenuOnlineDishesComponent implements OnInit {
   constructor(private meta: Meta, private productService: ProductsService) {
     setTimeout(() => {
       this.meta.updateTag(
-        { name: 'theme-color', content: '#4866d2' }
+        { name: 'theme-color', content: '#0e0f11' }
       )
     }, 100)
   }

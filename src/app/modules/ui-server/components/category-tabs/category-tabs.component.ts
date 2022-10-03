@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-category-tabs',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./category-tabs.component.scss']
 })
 export class CategoryTabsComponent implements OnInit {
-
+  @Input() showTabs: boolean = false;
   constructor() { }
 
   ngOnInit(): void {

@@ -27,7 +27,7 @@ export class UiKitchenRoomComponent implements OnInit {
   constructor(private ordersPendingService: OrdersPendingService, private meta: Meta) {
     setTimeout(() => {
       this.meta.updateTag(
-        { name: 'theme-color', content: '#4866d2' }
+        { name: 'theme-color', content: '#209bce' }
       )
     }, 100)
   }

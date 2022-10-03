@@ -11,6 +11,7 @@ import { UiServerDeliveryComponent } from './pages/ui-server-delivery/ui-server-
 import { UiServerPickupComponent } from './pages/ui-server-pickup/ui-server-pickup.component';
 import { UiServerRoomComponent } from './pages/ui-server-room/ui-server-room.component';
 import { CardTicketComponent } from './components/card-ticket/card-ticket.component';
+import { BottomNavbarServerComponent } from './components/bottom-navbar-server/bottom-navbar-server.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CardTicketComponent } from './components/card-ticket/card-ticket.compon
     CardTicketComponent,
     UiServerDeliveryComponent,
     UiServerPickupComponent,
-    UiServerRoomComponent
+    UiServerRoomComponent,
+    BottomNavbarServerComponent
   ],
   imports: [
     CommonModule,

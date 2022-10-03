@@ -1,9 +1,9 @@
 <div class="card me-3 mb-3">
   <img class="card-img-top" [src]="product.img">
-  <div class="card-body">
+  <i class="fas fa-heart text-danger fa-xl position-absolute" style="top: 25px; right: 15px;"></i>
+  <div class="card-body pb-0">
     <div class=" d-flex align-items-center justify-content-between">
-      <h5 class="m-0">{{product.name}}</h5>
-      <i class="fas fa-heart text-danger fa-xl"></i>
+      <h5 class="m-0" style="font-size: 18px">{{product.name}}</h5>
     </div>
     <p class="m-0">
       {{product.price | currency:'EUR':'symbol':'1.2-2':'fr' }}

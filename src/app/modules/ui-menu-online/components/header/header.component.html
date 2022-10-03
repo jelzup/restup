@@ -8,13 +8,8 @@ background-size: cover;">
       <i class="sidenav-toggler-line bg-white"></i>
     </div>
   </a>
-  <a [routerLink]="['/home']" routerLinkActive="router-link-active"
-    class="btn btn-icon bg-gradient-secondary btn-round position-absolute d-flex align-items-center justify-content-center"
-    style="right: 20px; top: 20px; z-index: 4; width: 45px; height: 45px;">
-    <i class="fa-solid fa-house" style="font-size: 20px;"></i>
-  </a>
-  <div class="container-fluid pb-lg-9 pb-9 pt-3 position-relative z-index-0">
-    <app-head [title]="title" [icon]="icon"></app-head>
-    <app-category-tabs></app-category-tabs>
+  <div class="container-fluid pb-lg-9 pb-7 pt-7 position-relative z-index-0">
+    <!-- <app-head [title]="title" [icon]="icon"></app-head> -->
+    <app-category-tabs [showTabs]="(isDesktop() || isLargeTablet()) && (!isMobile() || !isTablet())"></app-category-tabs>
   </div>
 </div>

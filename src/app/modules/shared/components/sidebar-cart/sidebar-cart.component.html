@@ -1,6 +1,6 @@
 <div class="fixed-plugin {{showSidebar ? 'show' : ''}}">
-  <a class="fixed-plugin-button bg-gradient-secondary position-fixed px-3 py-2 text-center" (click)="openSidebar()">
-    <i class="fas fa-shopping-cart py-2 text-lg"></i>
+  <a class="fixed-plugin-button text-center" (click)="openSidebar()" *ngIf="showCart">
+    <i class="fas fa-shopping-cart text-lg"></i>
   </a>
   <div class="card shadow-lg">
     <div class="card-header pb-0 pt-3 ">
@@ -55,10 +55,10 @@
           <i class="fas fa-credit-card"></i>
         </div>
         <div class="in">
-          <div>
+          <div class="text-dark">
             Total à payer
           </div>
-          <div class="total">
+          <div class="total text-dark">
             {{ getTotalTTC() | currency:'EUR':'symbol':'1.2-2':'fr' }}
           </div>
         </div>

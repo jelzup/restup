@@ -11,6 +11,7 @@ import { CategoryTabsComponent } from './components/category-tabs/category-tabs.
 import { HeaderComponent } from './components/header/header.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CardTicketComponent } from './components/card-ticket/card-ticket.component';
+import { BottomNavbarKitchenComponent } from './components/bottom-navbar-kitchen/bottom-navbar-kitchen.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CardTicketComponent } from './components/card-ticket/card-ticket.compon
     UiKitchenPickupComponent,
     CardTicketComponent,
     CategoryTabsComponent,
-    HeaderComponent
+    HeaderComponent,
+    BottomNavbarKitchenComponent
   ],
   imports: [
     CommonModule,

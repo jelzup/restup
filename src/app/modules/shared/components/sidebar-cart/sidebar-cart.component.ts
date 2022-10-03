@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Cart } from 'src/app/models/cart.model';
 import { CartService } from 'src/app/services/cart/cart.service';
 import Swal from 'sweetalert2';
@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./sidebar-cart.component.scss']
 })
 export class SidebarCartComponent implements OnInit {
+  @Input() showCart: boolean = true;
   showSidebar = false;
   carts: Cart[] = [];
   quantity: number = 1;

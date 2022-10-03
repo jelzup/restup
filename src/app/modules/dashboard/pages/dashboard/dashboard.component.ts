@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
     private renderer: Renderer2, private meta: Meta) {
     setTimeout(() => {
       this.meta.updateTag(
-        { name: 'theme-color', content: '#4866d2' }
+        { name: 'theme-color', content: '#1a73d7' }
       )
     }, 100)
   }

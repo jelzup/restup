@@ -1,0 +1,60 @@
+.appHeader {
+  background: transparent !important;
+  width: 100%;
+  position: absolute;
+  z-index: 1010;
+  height: 70px !important;
+  display: none;
+
+  .left {
+    left: 10px;
+    top: 0;
+  }
+
+  .left,
+  .right {
+    height: 56px;
+    display: flex;
+    align-items: center;
+  }
+
+  .headerButton {
+    min-width: 36px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .pageTitle {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 10px;
+  }
+}
+
+.sticky {
+  display: block;
+  background: rgba(196, 196, 196, 0.05) !important;
+  box-shadow: inset 0px -1.03198px 0.515988px rgb(255 255 255 / 10%);
+  -webkit-backdrop-filter: blur(15.4796px);
+  backdrop-filter: blur(15.4796px);
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+
+  .appHeader {
+    .pageTitle {
+      font-size: 18px;
+    }
+
+    .headerButton {
+      display: none;
+    }
+  }
+}

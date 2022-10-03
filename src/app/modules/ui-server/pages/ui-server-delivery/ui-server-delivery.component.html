@@ -1,6 +1,7 @@
 <app-loader [state]="isLoading()"></app-loader>
+<app-header-nav-mobile [title]="'Commandes à livrer'" [showCart]="false" [quantity]="orders.length"></app-header-nav-mobile>
 <app-header [quantity]="orders.length" [kitchen]="false" [subtitle]="'prêtes à être servies en livraison'"></app-header>
-<div class="mt-n8 pt-3 mb-5">
+<div class="mt-n8 pt-3 mb-5" style="padding-bottom: 50px;">
   <div class="container-fluid px-0">
     <owl-carousel-o [options]="carouselMultipleOptions">
       <ng-container *ngFor="let order of orders">
@@ -11,3 +12,5 @@
     </owl-carousel-o>
   </div>
 </div>
+<app-bottom-navbar-server [showBottomNavbar]="(!isDesktop() || !isLargeTablet()) && (isMobile() || isTablet())">
+</app-bottom-navbar-server>

@@ -1,6 +1,7 @@
 <app-loader [state]="isLoading()"></app-loader>
+<app-header-nav-mobile [title]="'Formules'" [icon]="'fas fa-layer-group'"></app-header-nav-mobile>
 <app-header [title]="'Formules'" [icon]="'fas fa-layer-group'"></app-header>
-<div class="mt-n8 pt-3 mb-5">
+<div class="mt-n8 pt-3 mb-5" style="padding-bottom: 50px">
   <div class="container-fluid px-0">
     <h2 class="position-relative z-index-2 text-white text-uppercase ms-4 mb-0 ps-3">
       Formules
@@ -19,3 +20,5 @@
   </div>
 </div>
 <app-sidebar-cart></app-sidebar-cart>
+<app-bottom-navbar [showBottomNavbar]="(!isDesktop() || !isLargeTablet()) && (isMobile() || isTablet())">
+</app-bottom-navbar>

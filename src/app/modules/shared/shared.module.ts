@@ -18,6 +18,9 @@ import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
 import timeGridPlugin from '@fullcalendar/timegrid';
 import resourceTimeGridPlugin from '@fullcalendar/resource-timegrid';
 import { LoaderComponent } from './components/loader/loader.component';
+import { BottomNavbarComponent } from './components/bottom-navbar/bottom-navbar.component';
+import { BottomNavbarKitchenServerComponent } from './components/bottom-navbar-kitchen-server/bottom-navbar-kitchen-server.component';
+import { HeaderNavMobileComponent } from './components/header-nav-mobile/header-nav-mobile.component';
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin, interactionPlugin, timeGridPlugin, resourceTimeGridPlugin
 ]);
@@ -34,6 +37,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     SidebarCartComponent,
     CalendarComponent,
     LoaderComponent,
+    BottomNavbarComponent,
+    BottomNavbarKitchenServerComponent,
+    HeaderNavMobileComponent,
   ],
   imports: [
     CommonModule,
@@ -51,7 +57,9 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     TitleMenuComponent,
     SidebarCartComponent,
     CalendarComponent,
-    LoaderComponent
+    LoaderComponent,
+    BottomNavbarComponent,
+    HeaderNavMobileComponent
   ]
 })
 export class SharedModule { }

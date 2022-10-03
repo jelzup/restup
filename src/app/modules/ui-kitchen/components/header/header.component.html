@@ -1,6 +1,6 @@
 <div class="page-header position-relative" style="background-image: url('assets/img/pricing.jpeg');
 background-size: cover;">
-  <span class="mask bg-gradient-primary opacity-6"></span>
+  <span class="mask bg-gradient-info opacity-6"></span>
   <a href="javascript:void;" class="nav-link text-white p-0" id="iconNavbarSidenav">
     <div class="sidenav-toggler-inner">
       <i class="sidenav-toggler-line bg-white"></i>
@@ -8,13 +8,7 @@ background-size: cover;">
       <i class="sidenav-toggler-line bg-white"></i>
     </div>
   </a>
-  <a [routerLink]="['/home']" routerLinkActive="router-link-active"
-    class="btn btn-icon bg-gradient-primary btn-round position-absolute d-flex align-items-center justify-content-center"
-    style="right: 20px; top: 20px; z-index: 4; width: 45px; height: 45px;">
-    <i class="fa-solid fa-house" style="font-size: 20px;"></i>
-  </a>
-  <div class="container-fluid pb-lg-9 pb-9 pt-3 postion-relative z-index-0">
-    <app-head-title [quantity]="quantity" [kitchen]="kitchen" [subtitle]="subtitle"></app-head-title>
-    <app-category-tabs></app-category-tabs>
+  <div class="container-fluid pb-lg-9 pb-8 pt-7 position-relative z-index-0">
+    <app-category-tabs [showTabs]="(isDesktop() || isLargeTablet()) && (!isMobile() || !isTablet())"></app-category-tabs>
   </div>
 </div>

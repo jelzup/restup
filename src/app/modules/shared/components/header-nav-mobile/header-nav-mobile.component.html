@@ -1,0 +1,18 @@
+  <!-- App Header -->
+  <div
+    class="appHeader header-classic text-light {{sticky ? 'sticky animate__animated animate__fadeInDown' : ''}} d-flex align-items-center justify-content-between"
+    style="overflow: hidden;" (scroll)="onWindowScroll($event);">
+    <div class="left" style="width: 56px;">
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="headerButton" data-toggle="modal"
+        data-target="#sidebarPanel2">
+        <i class="fas fa-home px-2 text-white"></i>
+      </a>
+    </div>
+    <div class="pageTitle">
+      <i class="fas {{icon}} me-1"></i> {{title}}
+    </div>
+    <div class="right" style="width: 56px;">
+      <app-sidebar-cart [showCart]="showCart"></app-sidebar-cart>
+    </div>
+  </div>
+  <!-- * App Header -->
