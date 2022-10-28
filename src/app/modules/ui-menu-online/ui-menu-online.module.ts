@@ -8,7 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardTicketComponent } from './components/card-ticket/card-ticket.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SharedModule } from '../shared/shared.module';
-import { HeadComponent } from './components/head/head.component';
 import { UiMenuOnlineDishesComponent } from './pages/ui-menu-online-dishes/ui-menu-online-dishes.component';
 import { UiMenuOnlineDrinksComponent } from './pages/ui-menu-online-drinks/ui-menu-online-drinks.component';
 import { UiMenuOnlineDessertsComponent } from './pages/ui-menu-online-desserts/ui-menu-online-desserts.component';
@@ -22,7 +21,6 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     CategoryTabsComponent,
     HeaderComponent,
     CardTicketComponent,
-    HeadComponent,
     UiMenuOnlineDishesComponent,
     UiMenuOnlineDrinksComponent,
     UiMenuOnlineDessertsComponent,

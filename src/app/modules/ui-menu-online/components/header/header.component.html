@@ -9,7 +9,6 @@ background-size: cover;">
     </div>
   </a>
   <div class="container-fluid pb-lg-9 pb-7 pt-7 position-relative z-index-0">
-    <!-- <app-head [title]="title" [icon]="icon"></app-head> -->
-    <app-category-tabs [showTabs]="(isDesktop() || isLargeTablet()) && (!isMobile() || !isTablet())"></app-category-tabs>
+    <app-category-tabs [showTabs]="!isTablet() && !isMobile()"></app-category-tabs>
   </div>
 </div>
